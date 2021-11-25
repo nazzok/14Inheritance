@@ -41,6 +41,16 @@ int main() {
 	Car car = Car(manufacturer, year, doors);
 	car.displayInfo();
 
+	//test Truck class
+	cout << endl << "Truck:\nEnter the manufacturer: ";
+	cin.ignore();
+	getline(cin, manufacturer);
+	cout << "Enter the year built: ";
+	cin >> year;
+	cout << "Enter the towing capcity: ";
+	cin >> towingCapacity;
+	Truck truck = Truck(manufacturer, year, towingCapacity);
+	truck.displayInfo();
 
 	return 0;
 }
